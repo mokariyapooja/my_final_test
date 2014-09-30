@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
- 
-  scope "/admin" do 
-    devise_for :admins,:controllers => {:sessions=>"admins/sessions",:passwords=>"admins/passwords"}
-  end
+  devise_for :admins,:controllers => {:sessions=>"admins/sessions",:passwords=>"admins/passwords"}
 
   root 'products#index'
   
