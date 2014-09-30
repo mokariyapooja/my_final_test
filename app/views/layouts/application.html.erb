@@ -13,6 +13,13 @@
       <% if admin_signed_in? %>
         Signed in as <%= current_admin.email %>. Not you?
         <%= link_to "Sign out", destroy_admin_session_path, :method => :delete %>
+          <h2>Import Products</h2>
+            <%= form_tag import_products_path, multipart: true do %>
+              <%= file_field_tag :file %>
+            <%= submit_tag "Import" %>
+          <% end %>
+
+          <br>          
       <% else %>
         <%= link_to "Sign in for admin", new_admin_session_path %>  
         <%= link_to "Home", root_path %>
