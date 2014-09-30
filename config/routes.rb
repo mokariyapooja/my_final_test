@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :admins
+  scope "/admin" do 
+    devise_for :admins
+  end
 
   root 'products#index'
   

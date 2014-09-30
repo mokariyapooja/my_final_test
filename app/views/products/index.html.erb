@@ -31,17 +31,4 @@
 
 <%= link_to 'New Product', new_product_path %>
 
-<h2>Import Products</h2>
-<%= form_tag import_products_path, multipart: true do %>
-  <%= file_field_tag :file %>
-  <%= submit_tag "Import" %>
-<% end %>
-
-<h2>Export Products</h2>
-<p>
-  Download:
-  <%= link_to "CSV File", products_path(format: "csv") %> |
-  <%= link_to "Excel File", products_path(format: "xls") %>
-</p>
-
 <br>
