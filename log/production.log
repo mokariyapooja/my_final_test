@@ -1,0 +1,54 @@
+I, [2014-09-30T08:38:22.551459 #6549]  INFO -- : Started GET "/products" for 127.0.0.1 at 2014-09-30 08:38:22 +0530
+I, [2014-09-30T08:38:22.568066 #6549]  INFO -- : Processing by ProductsController#index as HTML
+E, [2014-09-30T08:38:22.601465 #6549] ERROR -- : SQLite3::SQLException: no such table: products: SELECT "products".* FROM "products"   ORDER BY "products"."name" ASC
+I, [2014-09-30T08:38:22.602384 #6549]  INFO -- :   Rendered products/index.html.erb within layouts/application (3.8ms)
+I, [2014-09-30T08:38:22.602620 #6549]  INFO -- : Completed 500 Internal Server Error in 33ms
+F, [2014-09-30T08:38:22.605858 #6549] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: products: SELECT "products".* FROM "products"   ORDER BY "products"."name" ASC):
+    13:  
+    14:   <tbody>
+    15:   <% count = 1 %>
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:       <td><p><%= link_to count, product_path(product) %></p></td>
+    19:         <td><%= product.name %></td>
+  app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb___918173517_86636190'
+  app/controllers/products_controller.rb:8:in `index'
+
+
+I, [2014-09-30T08:38:24.524978 #6549]  INFO -- : Started GET "/products" for 127.0.0.1 at 2014-09-30 08:38:24 +0530
+I, [2014-09-30T08:38:24.526304 #6549]  INFO -- : Processing by ProductsController#index as HTML
+E, [2014-09-30T08:38:24.528561 #6549] ERROR -- : SQLite3::SQLException: no such table: products: SELECT "products".* FROM "products"   ORDER BY "products"."name" ASC
+I, [2014-09-30T08:38:24.529543 #6549]  INFO -- :   Rendered products/index.html.erb within layouts/application (1.7ms)
+I, [2014-09-30T08:38:24.529779 #6549]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2014-09-30T08:38:24.534140 #6549] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: products: SELECT "products".* FROM "products"   ORDER BY "products"."name" ASC):
+    13:  
+    14:   <tbody>
+    15:   <% count = 1 %>
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:       <td><p><%= link_to count, product_path(product) %></p></td>
+    19:         <td><%= product.name %></td>
+  app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb___918173517_86636190'
+  app/controllers/products_controller.rb:8:in `index'
+
+
+I, [2014-09-30T08:39:21.056754 #6610]  INFO -- : Started GET "/products" for 127.0.0.1 at 2014-09-30 08:39:21 +0530
+I, [2014-09-30T08:39:21.070491 #6610]  INFO -- : Processing by ProductsController#index as HTML
+E, [2014-09-30T08:39:21.141278 #6610] ERROR -- : SQLite3::SQLException: no such table: products: SELECT "products".* FROM "products"   ORDER BY "products"."name" ASC
+I, [2014-09-30T08:39:21.142296 #6610]  INFO -- :   Rendered products/index.html.erb within layouts/application (4.2ms)
+I, [2014-09-30T08:39:21.142549 #6610]  INFO -- : Completed 500 Internal Server Error in 72ms
+F, [2014-09-30T08:39:21.147584 #6610] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: products: SELECT "products".* FROM "products"   ORDER BY "products"."name" ASC):
+    13:  
+    14:   <tbody>
+    15:   <% count = 1 %>
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:       <td><p><%= link_to count, product_path(product) %></p></td>
+    19:         <td><%= product.name %></td>
+  app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__803832661_81049800'
+  app/controllers/products_controller.rb:8:in `index'
+
+
