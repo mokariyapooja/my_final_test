@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 puts 'DEFAULT ADMIN'
-admin = Admin.where(:email => "pooja.apsolute@gmail.com").first_or_initialize
+admin = Admin.where(:email => "admin@test.com").first_or_initialize
 if admin.new_record?
   admin.password = "12345678"
   admin.password_confirmation = "12345678"
